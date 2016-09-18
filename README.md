@@ -10,4 +10,8 @@ Added s6_overlay to get s6
 Use php5 instead of php7
 Removed acpu and opcache (could not get the packages installed)
 
+Build
+=====
+./build.sh
+
 #Work in progress
