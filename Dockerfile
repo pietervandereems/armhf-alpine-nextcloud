@@ -46,6 +46,7 @@ RUN apk -U add \
     php-zlib \
     php-zip \
     php-xmlreader \
+    php-xml \
     php-posix \
     php-openssl \
     php-ldap \
@@ -72,7 +73,7 @@ RUN apk -U add \
  && rm -rf /var/cache/apk/* /tmp/* /root/.gnupg
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY php-fpm.conf /etc/php7/php-fpm.conf
+COPY php-fpm.conf /etc/php/php-fpm.conf
 #COPY opcache.ini /etc/php7/conf.d/00_opcache.ini
 #COPY apcu.ini /etc/php7/conf.d/apcu.ini
 COPY run.sh /usr/local/bin/run.sh
