@@ -1,4 +1,4 @@
-FROM hypriot/rpi-alpine-scratch
+FROM hypriot/rpi-alpine-scratch:v3.3
 MAINTAINER Pieter van der Eems <docker@eemco.nl>
 
 ARG NEXTCLOUD_VERSION=10.0.1
